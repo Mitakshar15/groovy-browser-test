@@ -20,7 +20,6 @@ class SearchTest {
 
         //Set-up options for the chrome driver
         ChromeOptions options = new ChromeOptions()
-        options.addArguments("--headless")
         options.addArguments("--no-sandbox")
         options.addArguments("--disable-dev-shm-usage")
 
@@ -29,8 +28,8 @@ class SearchTest {
     }
 
     @Test
-    void testGoogleSearch(){
-        chromeDriver.get("https://www.google.com")
+    void testBingSearch(){
+        chromeDriver.get("https://www.bing.com")
         def searchBox = chromeDriver.findElement(By.name("q"))
         searchBox.sendKeys("Alt Digital")
         searchBox.submit()

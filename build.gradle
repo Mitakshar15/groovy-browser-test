@@ -12,8 +12,8 @@ repositories {
 dependencies {
     implementation 'org.codehaus.groovy:groovy-all:3.0.9'
     testImplementation 'org.testng:testng:7.7.1'
-    implementation 'org.seleniumhq.selenium:selenium-java:4.11.0'
-    implementation 'io.github.bonigarcia:webdrivermanager:5.4.1' //Use Driver Files for faster Executions
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.28.1'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.4.1'   //Use Driver Files for faster Executions
     testImplementation 'org.slf4j:slf4j-simple:2.0.7' // SLF4J binding
 }
 
